@@ -8,6 +8,7 @@ pragma solidity >= 0.7.0 < 0.9.0; // ^0.8.17 : 0.8.17 이상
  * pure : function 밖의 변수 Read, Write 모두 불가능
  */
 
+
 contract Lec02 {
     string public name;
     uint public age;

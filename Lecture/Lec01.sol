@@ -19,5 +19,6 @@ contract Lec01{
     uint256 public wei1 = 1 wei;
     uint256 public gwei1 = 1 gwei;
     
+    
 
 }
