@@ -12,7 +12,7 @@ contract Lec01{
     address public addr = 0xE12EA99b2A6603EC19e3138a92d8F0101a588031;
 
 
-    int8 public i = 126; //int:음수포함
+    int8 public i = 126; //int:음수포함.
     uint8 public ui = 123; //uint(unsigned int):음수포함X
 
     uint256 public ether1 = 1 ether;
