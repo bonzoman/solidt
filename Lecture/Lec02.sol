@@ -6,6 +6,8 @@ pragma solidity >= 0.7.0 < 0.9.0; // ^0.8.17 : 0.8.17 이상
  *
  * view : function 밖의 변수 Read만 가능.
  * pure : function 밖의 변수 Read, Write 모두 불가능..
+ * 
+ * constructor 생성자
  */
 
 
@@ -17,7 +19,6 @@ contract Lec02 {
         name = _name;
         age = _age;
     }
-
 
     function setName(string memory _name) public {
         name = _name;
@@ -38,8 +39,8 @@ contract Lec02 {
 }
 
 
-contract Lec02a{
-
+contract Lec02a {
+    
     Lec02 l02 = new Lec02("acucumy", 30);
     
     function setUserInfo(string memory _name, uint _age) public {
