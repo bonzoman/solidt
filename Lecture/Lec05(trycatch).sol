@@ -23,7 +23,7 @@ contract Runner {
 
     Math public mathInstance = new Math();
 
-    function run(uint _num1, uint _num2) public returns (uint, bool){
+    function playRun(uint _num1, uint _num2) public returns (uint, bool){
 
         try mathInstance.divide(_num1, _num2) returns(uint result){
             // emit returnValue(result);
