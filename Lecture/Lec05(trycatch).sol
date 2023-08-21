@@ -15,7 +15,6 @@ contract Math {
 }
 
 contract Runner {
-    // event returnValue(uint result);
     event Log(string message);
     event catchError(string _name, string _err);
     event catchPanic(string _name, uint _err);
@@ -26,7 +25,6 @@ contract Runner {
     function playRun(uint _num1, uint _num2) public returns (uint, bool){
 
         try mathInstance.divide(_num1, _num2) returns(uint result){
-            // emit returnValue(result);
             return(result, true);
         } catch Error(string memory _err) {
             emit catchError("======> revert/require Occured !!!", _err);
