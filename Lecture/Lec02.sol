@@ -5,7 +5,7 @@ pragma solidity >= 0.7.0 < 0.9.0; // ^0.8.17 : 0.8.17 이상
  * public, private, internal, external
  *
  * view : function 밖의 변수 Read만 가능.
- * pure : function 밖의 변수 Read, Write 모두 불가능
+ * pure : function 밖의 변수 Read, Write 모두 불가능..
  */
 
 
