@@ -21,14 +21,14 @@ contract MoneyBox {
     }
    
     receive() external payable {
-        require(msg.value == 0.0001 ether, "========>>>>>>>>> Must be 0.0001 ether.");
+        require(msg.value == 0.001 ether, "========>>>>>>>>> Must be 0.001 ether.");
         require(paidMemberList[round][msg.sender] == false, "========>>>>>>>>> Must be a new player in each game.");
         
         paidMemberList[round][msg.sender] = true;
         
         emit WhoPaid(msg.sender,msg.value);
         
-        if(address(this).balance == 0.0003 ether){
+        if(address(this).balance == 0.003 ether){
             (bool sent,)= payable(msg.sender).call{value:address(this).balance}("");
             require(sent,"========>>>>>>>>> Failed to pay");
             round++;
