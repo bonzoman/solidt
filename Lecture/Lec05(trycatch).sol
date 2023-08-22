@@ -4,7 +4,8 @@ pragma solidity >= 0.7.0 < 0.9.0; // ^0.8.17 : 0.8.17 이상
 /* 
  * try catch
  * 
- * 
+ * try catch문 안에서 assert/revert/require를 통해 에러가 난다면, catch는 실행되지 않고(개발자가 의도한걸로 인식) 정상적으로 프로그램을 종료한다.
+ * try catch문 밖에서 assert/revert/require를 통해 에러가 난다면, catch가 실행되고 에러를 핸들링한다.
  */
 
 contract Math {
